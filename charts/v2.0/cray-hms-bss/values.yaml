@@ -103,4 +103,3 @@ cray-service:
     uri: " "
     prefix: /apis/bss
 
-dockerKubectlTag: 0.2.0-20200421212755_170bb37

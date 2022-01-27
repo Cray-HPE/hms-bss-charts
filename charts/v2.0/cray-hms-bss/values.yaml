@@ -35,6 +35,20 @@ cray-service:
   fullnameOverride: "cray-bss"
   priorityClassName: csm-high-priority-service
   replicaCount: 3
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: kubernetes.io/hostname
+        labelSelector:
+          matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+              - cray-bss
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 50%
+    type: RollingUpdate
   etcdCluster:
     enabled: true
     podPriorityClassName: csm-high-priority-service

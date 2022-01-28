@@ -34,7 +34,7 @@ cray-service:
   nameOverride: "cray-bss"
   fullnameOverride: "cray-bss"
   priorityClassName: csm-high-priority-service
-  replicaCount: 3
+  replicaCount: 4
   affinity:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:

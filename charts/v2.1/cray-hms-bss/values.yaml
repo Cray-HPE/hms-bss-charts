@@ -12,14 +12,16 @@
 
 global:
   appVersion: 1.16.0
-  testVersion: 1.16.0
+  #testVersion: 1.16.0
+  testVersion: 1.16.0-20220613193618.652a901
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-bss
   pullPolicy: IfNotPresent
 tests:
   image:
-    repository: artifactory.algol60.net/csm-docker/stable/cray-bss-test
-    pullPolicy: IfNotPresent
+    #repository: artifactory.algol60.net/csm-docker/stable/cray-bss-test
+    repository: artifactory.algol60.net/csm-docker/unstable/cray-bss-test
+    pullPolicy: Always
 
 ipxe:
   dnsServerIp: "10.2.255.253"

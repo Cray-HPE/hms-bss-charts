@@ -11,17 +11,17 @@
 # See https://connect.us.cray.com/jira/browse/CASMCLOUD-661
 
 global:
-  appVersion: 1.16.0
-  #testVersion: 1.16.0
-  testVersion: 1.16.0-20220613193618.652a901
+  appVersion: 1.17.0
+  testVersion: 1.17.0
+
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-bss
   pullPolicy: IfNotPresent
+
 tests:
   image:
-    #repository: artifactory.algol60.net/csm-docker/stable/cray-bss-test
-    repository: artifactory.algol60.net/csm-docker/unstable/cray-bss-test
-    pullPolicy: Always
+    repository: artifactory.algol60.net/csm-docker/stable/cray-bss-test
+    pullPolicy: IfNotPresent
 
 ipxe:
   dnsServerIp: "10.2.255.253"

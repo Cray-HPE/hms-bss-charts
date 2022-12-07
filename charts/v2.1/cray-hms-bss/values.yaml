@@ -20,7 +20,7 @@ image:
 
 tests:
   image:
-    repository: artifactory.algol60.net/csm-docker/stable/cray-bss-test
+    repository: artifactory.algol60.net/csm-docker/stable/cray-bss-hmth-test
     pullPolicy: IfNotPresent
 
 ipxe:

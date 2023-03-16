@@ -34,6 +34,7 @@ ipxe:
     - "10.100.33.22"
 
 addvertisAddress: ""
+
 cray-etcd-base:
   nameOverride: "cray-bss"
   fullnameOverride: "cray-bss"
@@ -42,6 +43,15 @@ cray-etcd-base:
     fullnameOverride: "cray-bss-etcd"
     nameOverride: "cray-bss-etcd"
     priorityClassName: "csm-high-priority-service"
+    extraEnvVars:
+      - name: ETCD_QUOTA_BACKEND_BYTES
+        value: "10737418240"
+    extraVolumes:
+      - configMap:
+          defaultMode: 420
+          name: cray-bss-bitnami-etcd-config
+        name: etcd-config
+
 cray-service:
   type: "Deployment"
   nameOverride: "cray-bss"

@@ -40,8 +40,8 @@ cray-etcd-base:
   fullnameOverride: "cray-bss"
   etcd:
     enabled: true
-    fullnameOverride: "cray-bss-etcd"
-    nameOverride: "cray-bss-etcd"
+    fullnameOverride: "cray-bss-bitnami-etcd"
+    nameOverride: "cray-bss-bitnami-tcd"
     priorityClassName: "csm-high-priority-service"
     extraEnvVars:
       - name: ETCD_QUOTA_BACKEND_BYTES

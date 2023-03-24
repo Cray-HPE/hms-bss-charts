@@ -41,7 +41,7 @@ cray-etcd-base:
   etcd:
     enabled: true
     fullnameOverride: "cray-bss-bitnami-etcd"
-    nameOverride: "cray-bss-bitnami-tcd"
+    nameOverride: "cray-bss-bitnami-etcd"
     priorityClassName: "csm-high-priority-service"
     extraEnvVars:
       - name: ETCD_HEARTBEAT_INTERVAL

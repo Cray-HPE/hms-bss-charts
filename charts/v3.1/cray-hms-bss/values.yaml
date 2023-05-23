@@ -43,6 +43,12 @@ cray-etcd-base:
     fullnameOverride: "cray-bss-bitnami-etcd"
     nameOverride: "cray-bss-bitnami-etcd"
     priorityClassName: "csm-high-priority-service"
+    disasterRecovery:
+      cronjob:
+        snapshotsDir: "/snapshots/cray-bss-bitnami-etcd"
+        schedule: "0 */1 * * *"
+        historyLimit: 1
+        snapshotHistoryLimit: 24
     extraEnvVars:
       - name: ETCD_HEARTBEAT_INTERVAL
         value: "4200"

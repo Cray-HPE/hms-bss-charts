@@ -11,8 +11,8 @@
 # See https://connect.us.cray.com/jira/browse/CASMCLOUD-661
 
 global:
-  appVersion: 1.26.0
-  testVersion: 1.26.0
+  appVersion: 1.27.0
+  testVersion: 1.27.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-bss

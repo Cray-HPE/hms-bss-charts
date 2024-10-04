@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "cray-hms-bss"
-version: 3.2.3
+version: 3.2.4
 description: "Kubernetes resources for cray-hms-bss"
 home: "https://github.com/Cray-HPE/hms-bss-charts"
 sources:
@@ -15,6 +15,6 @@ dependencies:
 maintainers:
   - name: Hardware Management
     url: https://github.com/orgs/Cray-HPE/teams/hardware-management
-appVersion: "1.27.0"
+appVersion: "1.28.0"
 annotations:
   artifacthub.io/license: "MIT"

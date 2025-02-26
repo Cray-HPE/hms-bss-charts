@@ -141,7 +141,7 @@ cray-service:
         - name: BSS_DEBUG
           value: false
         - name: BSS_CACHE_EVICTION_TIMEOUT
-          value: 10
+          value: 600
       ports:
         - name: http
           containerPort: 27778

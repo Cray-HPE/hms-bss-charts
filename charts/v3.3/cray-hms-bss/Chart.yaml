@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "cray-hms-bss"
-version: 3.3.3
+version: 3.3.4
 description: "Kubernetes resources for cray-hms-bss"
 home: "https://github.com/Cray-HPE/hms-bss-charts"
 sources:
@@ -15,9 +15,9 @@ dependencies:
 maintainers:
   - name: Hardware Management
     url: https://github.com/orgs/Cray-HPE/teams/hardware-management
-appVersion: "1.33.0"  # update pprof image version below as well
+appVersion: "1.34.0"  # update pprof image version below as well
 annotations:
   artifacthub.io/images: |-
     - name: cray-bss-pprof
-      image: artifactory.algol60.net/csm-docker/stable/cray-bss-pprof:1.32.0
+      image: artifactory.algol60.net/csm-docker/stable/cray-bss-pprof:1.34.0
   artifacthub.io/license: "MIT"
